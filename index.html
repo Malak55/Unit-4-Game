@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\moldy\Documents\HW4\unit-4-game\css\reset.css">
+	<link rel="stylesheet" type="text/css" href="C:\Users\moldy\Documents\HW4\unit-4-game\css\style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>CRYSTAL COLLECTOR</h1>
+	</div>
+	<div class="instructions">
+		<h3>How To Play</h3>
+		</br>
+		<ol>
+			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+			<li>There are four crystals below.</li>
+
+				<h4 id="blue">BLUE</h4>
+				<h4 id="green">GREEN</h4>
+				<h4 id="red">RED</h4>
+				<h4 id="yellow">YELLOW</h4>
+			
+			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="C:\Users\moldy\Documents\HW4\unit-4-game\images\blue.jpg" class=gemImage id="one" alt="Blue Gem">
+		<img src="C:\Users\moldy\Documents\HW4\unit-4-game\images\green.jpg" class=gemImage id="two" alt="Green Gem">
+		<img src="C:\Users\moldy\Documents\HW4\unit-4-game\images\red.jpg" class=gemImage id="three" alt="Red Gem">
+		<img src="C:\Users\moldy\Documents\HW4\unit-4-game\images\yellow.jpg" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="C:\Users\moldy\Documents\HW4\unit-4-game\javascript\game.js"></script>
+</body>
+</html>
