@@ -1,61 +1,48 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Crystal Collector Game</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="card-title">Instructions</h6>
-                        <p class="card-text">You will be given a random number at the start of the game.</p>
-                        <p class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                        <p class="card-text">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-                        <p class="card-text">The value of each crystal is hidden from you until you click on it.</p>
-                        <p class="card-text">Each time when the game starts, the game will change the values of each crystal</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="card-title">Score:</h6>
-                        <p class="card-text">Wins:<span id="wins">0</span></p>
-                        <p class="card-text">Losses:<span id="losses">0</span></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="card-title">Target Score</h6>
-                        <p class="card-text"><span id="target">0</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <button class="gem" value=0 id="gem1"><img src="/images/crystal1.jpg"></button>
-                        <button class="gem" value=1 id="gem2"><img src="/images/crystal2.jpg"></button>
-                        <button class="gem" value=2 id="gem3"><img src="/images/crystal3.jpg"></button>
-                        <button class="gem" value=3 id="gem4"><img src="/images/crystal4.jpg"></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="card-title">Your Score</h6>
-                        <p class="card-text"><span id="score">0</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div id="game">
+    <div id="title-block">
+      CrystalsCollector!
     </div>
 
+    <div id="instructions">
+      <p>You will be given a random number at the beginning of the game.</p>
+      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
+      <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
 
+    <div class="target-score clearfix">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/javascript/game.js"></script>
+      <div class="empty-div-target"></div>
+      
+      <div class="empty-win-lose"></div>
+
+    </div>
+
+    <div class="empty-gemstones clearfix"></div>
+    
+    <div id="score-title">
+      <p>Your total score is:</p>
+    </div>
+
+    <div class="empty-div-score"></div>
+
+  </div>
+
+  <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
